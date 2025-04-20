@@ -1,0 +1,44 @@
+.advertising{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:1330px ;
+    height:268px ;
+    margin: 0  auto;
+    margin-top: 10px;
+    background-color: white;
+    gap: 15px;
+    
+   
+    .advertising1{
+      width: 665px;
+      height: 100%;
+      background-color: black;  
+      border-radius: 20px;
+      a{
+        width:inherit;
+            height: inherit;
+        img{
+            width:inherit;
+            height: inherit;
+            border-radius: 20px;
+          }
+      }
+   
+    }
+    .advertising2{
+        width: 665px;
+        height: 100%;
+        background-color: black;
+        border-radius: 20px;
+        a{
+            width:inherit;
+                height: inherit;
+            img{
+                width:inherit;
+                height: inherit;
+                border-radius: 20px;
+              }
+          }
+    }
+}

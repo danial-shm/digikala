@@ -1,0 +1,169 @@
+.new-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:50px ;
+  height:51px ;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #d52d4e;
+  border: none;
+  font-family: yekan;
+  font-size: 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  z-index:101 ;
+  img{
+    width: 29px;
+    height:29px ;
+  }
+}
+
+/* بکگراند خاکستری که زمانی که دکمه کلیک می‌شود نمایش داده می‌شود */
+.dark-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(128, 128, 128, 0.5);
+  display: none;
+  z-index: 999;
+}
+
+/* پنجره اصلی */
+.new-popup {
+  position: fixed;
+  bottom:-170px ;
+  right:-130px;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  height: 480px;
+  background-color: white;
+  border-radius: 20px;
+  border:2px #d52d4e solid ;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: none;
+ 
+  z-index: 1000;
+}
+
+/* هدر پنجره و دکمه بستن */
+.popup-header-container {
+  border-radius: 20px;
+  position: absolute;
+  top: 15px;
+  left: 17px;
+  right: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.close-btn-icon {
+  
+  font-size: 24px;
+  cursor: pointer;
+  /* background-color: #ece7e7; */
+}
+
+.popup-body {
+  background-color: #ffffff;
+  height:410px ;
+  overflow-y: auto;
+ .center-1{
+  p{
+    font-family: yekan;
+    font-size:20px ;
+    font-weight:400 ;
+    margin-right:8px ;
+    margin-top:10px ;
+    
+    &:nth-child(2){
+      display: -webkit-box;
+      -webkit-line-clamp:2;
+      line-clamp:2 ;
+       line-height:2 ;
+      font-size:14px ;
+      font-weight:500;
+    }
+  }
+ }
+ .center-2{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right:5px ;
+  width: 322px;
+  height: 64px;
+  margin-top:25px ;
+  border-radius: 5px;
+  border:1px solid lightgray ;
+  font-family: yekan;
+  font-size:14.5px ;
+  background-color: white;
+  padding:0 20px ;
+  -webkit-line-clamp:3 ;
+  line-clamp: 3;
+  line-height:2 ;
+  
+  
+    .text{
+     display: flex;
+     align-items: center;
+     width: 250px;
+     height:60px ;
+     background-color: white;
+    }
+ 
+    
+    img{
+      cursor: pointer;
+    }
+  
+    &:nth-child(4){
+      height:100px ;
+    }
+}
+.call{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius:25px ;
+  width:120px ;
+  height:50px ;
+  margin: 0 auto;
+  margin-top:12px ;
+  background-color: #d52d4e;
+  a{
+    text-decoration: none;
+    color: white;
+    font-family: yekan;
+    font-size:15px ;
+  }
+}
+}
+.item-container{
+  display: flex;
+  align-items: center;
+  width:100% ;
+  height: 54px;
+  background-color: #d52d4e;
+  border-radius: 20px 20px 0px 0px;
+  p{
+    font-family: yekan;
+    font-weight: 400;
+    font-size:18px ;
+    margin-right:20px ;
+    color: white;
+  }
+}
+
+/* زمانی که دکمه کلیک می‌شود، پنجره و بکگراند نمایش داده می‌شوند */
+#new-toggle:checked + .new-button + .dark-background {
+  display: block;
+}
+
+#new-toggle:checked + .new-button + .dark-background + .new-popup {
+  display: block;
+}

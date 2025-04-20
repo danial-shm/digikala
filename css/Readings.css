@@ -1,0 +1,207 @@
+
+
+.reading-section {
+  width: 1400px;
+  margin: 40px auto;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.section-header h2 {
+  font-family: yekan;
+  font-size: 16px;
+  font-weight: 500;
+  margin-right: 15px;
+}
+
+.section-header a {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #00bfd6;
+  text-decoration: none;
+  margin-left: 15px;
+  span{
+    font-family: yekan;
+    font-size: 12px;
+  }
+  img{
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  gap: 16px;
+}
+
+.card {
+  width: 322px;
+  height: 277px;
+  border: 1px solid #e0e0e6;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 100%;
+  height: 182px;
+  object-fit: cover;
+  display: block;
+}
+
+.card p {
+  font-family: yekan;
+  font-size: 14px;
+  line-height: 1.6;
+  padding: 12px;
+  margin: 0;
+  color: #303030;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .parent {
+    width: 100%;
+    height: 330px;
+    background-color: aqua;
+    .base22 {
+     
+      max-width:1330px;
+      height:100%;
+      margin: 0 auto;
+      background-color: rgb(129, 198, 61);
+      
+      .top-item{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width:100%;
+        height: 50px;
+        background-color: bisque;
+        .right-item{
+          
+          h3{
+            font-family: yekan;
+            font-size: 16px;
+            font-weight: 500;
+            margin-right: 15px;
+          }  
+        }
+        .left-item{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          h3{
+            display: inline;
+            font-family:yekan;
+            font-size:12px;
+            font-weight: 500;
+            color:#19bfd3 ;
+          }
+          img{
+            width:20px;
+            height:20px;
+          }
+         
+        }
+      }
+      .item-box{
+        display: flex;
+        .bottom-item{
+        
+          width: 322px;
+          height: 278px;
+          background-color: rgb(33, 141, 235);
+          .img-bottom{
+            
+            img{width: 100%;
+              height: 200px;}
+          }
+          .text{
+            width:295px ;
+            height:73px;
+            margin:0 auto;
+            background-color: blueviolet;
+            span{
+              display: -webkit-box;
+              -webkit-line-clamp: 2;
+              line-clamp: 2;
+              font-family: yekan;
+              font-weight: 300;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+
+      
+    }
+  }
+   */

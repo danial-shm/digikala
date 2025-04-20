@@ -1,0 +1,14 @@
+.Discount-shoses{
+    margin:0 auto ;
+    width: 1330px;
+    height:167px ;
+    margin-top: 10px;
+    border-radius: 16px;
+    img{
+        width: inherit;
+        height: inherit;
+        object-fit: cover;
+        margin: 0 auto;
+        border-radius: 16px;
+    }
+}

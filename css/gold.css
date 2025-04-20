@@ -1,0 +1,324 @@
+/* head */
+* {
+  margin: 0;
+  padding: 0;
+}
+.new-header {
+  width: 100%;
+  height: 72px;
+  position: sticky;
+  top: 0;
+  background-color: #ffd08f;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  z-index: 999;
+}
+
+.new-header-center {
+  width: 100%;
+  height: 48px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 170px;
+}
+
+.new-header-center-link-right {
+  width: 243px;
+  height: 100%;
+  padding: 4px 0;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  column-gap: 6px;
+}
+
+.new-header-center-link-right-img {
+  width: 32px;
+  height: 32px;
+}
+
+.new-header-center-link-right-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.new-header-center-link-right-text-1 {
+  font-family: yekan;
+  font-size: 19px;
+  color: #0a4e4d;
+  font-weight: 800;
+}
+
+.new-header-center-link-right-text-2 {
+  font-family: yekan;
+  font-size: 19px;
+  color: #0a4e4d;
+  font-weight: 500;
+}
+
+.new-header-center-link-left {
+  width: 150px;
+  height: 100%;
+  border: 1px solid #ffd08f;
+  border-radius: 10px;
+  background-color: #ffffff;
+  align-items: center;
+  padding: 12px 12px 12px 4px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+}
+
+.new-header-center-link-left-text {
+  font-family: yekan;
+  font-size: 14px;
+  color: #e82c53;
+  font-weight: 500;
+  text-align: center;
+}
+
+.new-header-center-link-left-img {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 3px;
+}
+
+.new-header-center-link-left-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* end-head */
+/* start center */
+.gold-center {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #01494b;
+  background-image: url(../images/gold-center-img/img-1.png);
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  .gold-center-center {
+    width: 100%;
+    height: 207px;
+    margin: 0 290px;
+    padding-right: 20px;
+    .gold-center-center-text {
+      width: 410px;
+      height: 160px;
+      display: flex;
+      flex-flow: column wrap;
+      .gold-center-center-text-span-1 {
+        height: 69px;
+        font-family: yekan;
+        text-align: justify;
+        font-weight: 800;
+        font-size: 33px;
+        color: #ffffff;
+        .gold-center-center-text-span-1-span {
+          color: #ffd08f;
+        }
+      }
+      .gold-center-center-text-span-2 {
+        height: 90px;
+        font-family: yekan;
+        font-size: 12px;
+        color: #ffffff;
+        text-align: justify;
+        font-weight: 400;
+        line-height: 30px;
+      }
+    }
+    .gold-center-center-link {
+      margin-top: 20px;
+      width: 180px;
+      height: 40px;
+      border: 1px solid #ffffff;
+      background-color: #ffffff;
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      padding: 8px 16px;
+      border-radius: 10px;
+      .gold-center-center-link-span {
+        height: 26px;
+        font-family: yekan;
+        font-size: 14px;
+        color: #2b2b2b;
+        text-align: center;
+      }
+    }
+  }
+}
+
+/* end center */
+/*start center2 */
+.real-parent{
+    width:100% ;
+    height:600px ;
+    background-color:white;
+}
+.new-parent {
+  margin-top: 20px;
+  width: 1252px;
+  height: 543px;
+  margin: 0 auto;
+  background-color: #e5eceb;
+  margin-top: 15px;
+  border-radius: 15px;
+  .text {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+    width: 100%;
+    height: 50px;
+    /* background-color: #e82c53; */
+    h1 {
+      margin-right: 15px;
+      font-family: yekan;
+      font-weight: 600;
+      font-size: 21px;
+      color: #01494b;
+    }
+  }
+  .item {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+    width: 100%;
+    height: 419px;
+    cursor: pointer;
+
+    /* background-color: aquamarine; */
+    border-radius: 10px;
+    .item-img {
+      width: 297px;
+      height: 419px;
+      background-color: #01494b;
+      border-radius: 10px;
+
+      .cart-text {
+        text-align: center;
+        width: 100%;
+        height: 120px;
+        font-family: yekan;
+        line-height: 1.5;
+
+        h3 {
+          margin-top: 20px;
+          display: inline-block;
+          line-height: 2;
+          font-size: 22px;
+          font-weight: 600;
+          color: whitesmoke;
+        }
+        p {
+          margin-top: 10px;
+          font-size: 12px;
+          color: whitesmoke;
+        }
+      }
+      .photo-gold {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 299px;
+        background-color: #01494b;
+        border-radius: 10px;
+        cursor: pointer;
+        img {
+          width: 353px;
+          height: 295px;
+        }
+      }
+    }
+  }
+  .buy{
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    width:100%;
+    height:70px ;
+    
+    a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 178px;
+        height:35px ;
+        text-decoration: none;
+        font-family: yekan;
+        background-color: #01494b;
+        color: whitesmoke;
+        border-radius: 10px;
+        font-size:13px ;
+    }
+  }
+}
+.item-img-2 {
+  width: 297px;
+  height: 419px;
+  background-color: #ffd08f;
+  border-radius: 10px;
+  cursor: pointer;
+  .cart-text {
+    text-align: center;
+    width: 100%;
+    height: 120px;
+    font-family: yekan;
+    line-height: 1.5;
+
+    h3 {
+      margin-top: 20px;
+      display: inline-block;
+      line-height: 2;
+      font-size: 22px;
+      font-weight: 600;
+      color: #01494b;
+    }
+    p {
+      margin-top: 10px;
+      font-size: 12px;
+      color: #01494b;
+    }
+  }
+  .photo-gold {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 299px;
+    background-color: #ffd08f;
+    cursor: pointer;
+    border-radius: 10px;
+    img {
+      width: 553px;
+      height: 318px;
+    }
+  }
+}
+/* end center2 */

@@ -1,0 +1,206 @@
+.popup-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:180px ;
+    height:51px ;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: #029a49;
+    color: white;
+    border: none;
+    font-family:yekan;
+    font-size: 17px;
+    border-radius: 50px;
+    z-index:100;
+    cursor: pointer;
+    gap: 5px;
+    
+    div{
+        width: 1px;
+        height: 18px;
+        background-color: white;
+    }
+    
+  }
+  
+  
+  
+  /* بکگراند خاکستری که زمانی که دکمه کلیک می‌شود نمایش داده می‌شود */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.5);
+    display: none;
+    z-index: 999;
+  }
+  
+  /* پنجره اصلی */
+  .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 458px;
+    height: 353px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: none;
+    z-index: 1000;
+    
+  }
+  
+  /* هدر پنجره و دکمه بستن */
+  .popup-header {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 10px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .popup-content{
+    
+    .text-modal{
+     p{
+        font-family: yekan;
+        font-size:15px ;
+        font-weight: 400;
+     }   
+     span{
+        font-family: yekan;
+        font-size:13px ;
+        font-weight: 400;
+        color:gray ;
+     }
+    }
+    .box-item{
+        display: flex;
+        gap: 20px;
+        .box1{
+            margin-top:35px;
+            width: 198px;
+            height: 240px;
+            background-color: #007bff4b; 
+            background-image: url(../images/position.css/fresh-shop-basket.webp);
+            background-size:140px ;
+            background-repeat: no-repeat;
+            background-position: bottom left;
+            cursor: pointer;
+            .top{
+             width:150px ;
+             height:50px ;
+             display: flex;
+             align-items: center;
+             margin-top: 5px;
+             margin-right:10px ;
+           
+             p{
+             font-family: yekan;
+             }
+             img{
+                 width: 20px;
+                 height: 20px;
+             }
+            }
+           
+            .green{
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             width: 80px;
+             height:25px ;
+             font-family:yekan ;
+             font-weight: 500;
+             text-align: center;
+             font-size:12px ;
+             margin-right: 20px;
+             background-color: #029a49;
+             border-radius:10px 0px 10px 10px;
+             color: white;
+             gap: 5px;
+             img{
+               width:16px;
+               height: 16px;
+             }
+            }
+         }
+         .box2{
+             margin-top:35px;
+             width: 198px;
+             height: 240px;
+             background-color: rgb(254, 235, 222); 
+             background-image: url(../images/position.css/jet-shop-basket.webp);
+             background-size:140px ;
+             background-repeat: no-repeat;
+             background-position: bottom left;
+             cursor: pointer;
+             .top{
+              width:150px ;
+              height:50px ;
+              display: flex;
+              align-items: center;
+              margin-top: 5px;
+              margin-right:10px ;
+            
+              p{
+              font-family: yekan;
+              }
+              img{
+                  width: 20px;
+                  height: 20px;
+              }
+             }
+            
+             .green{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 90px;
+              height:25px ;
+              font-family:yekan ;
+              font-weight: 500;
+              text-align: center;
+              font-size:12px ;
+              margin-right: 20px;
+              background-color: rgb(255, 128, 66);
+              border-radius:10px 0px 10px 10px;
+              color: white;
+              gap: 5px;
+              img{
+                width:16px;
+                height: 16px;
+              }
+             }
+          }
+    }
+    
+  }
+  
+  .close-btn {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .popup-content {
+    padding: 20px;
+  }
+  
+  /* زمانی که دکمه کلیک می‌شود، پنجره و بکگراند نمایش داده می‌شوند */
+  #popup-toggle:checked + .popup-button + .overlay {
+    display: block;
+    
+  }
+  
+  #popup-toggle:checked + .popup-button + .overlay + .popup {
+    display: block;
+    
+  }
+  
+  
